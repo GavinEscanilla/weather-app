@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input1, #input2{
+    width: 30%;
+}
+button{
+    width: 30%;
+}
