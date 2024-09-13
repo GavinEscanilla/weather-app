@@ -16,6 +16,7 @@ button{
 }
 #input1{
     width: 160px;
+    text-align: center;
 }
 button{
     display: block;
