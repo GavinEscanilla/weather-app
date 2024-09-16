@@ -14,7 +14,7 @@ const fetchData = async (input) =>{
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${input},us&appid=${key}`);
     const data = await res.json();
     const { weather, main,name} = data;
-    temp.innerHTML = `The Temperature is ${f(main.temp)}°F, but it feels like ${f(main.feels_like)}°F`;
+    temp.innerHTML = `The Temperature in ${name} is ${f(main.temp)}°F, but it feels like ${f(main.feels_like)}°F`;
     if( f(main.temp) > 50){
         weatherc.style.background = "rgba(255, 0, 0, 0.5)";
 
